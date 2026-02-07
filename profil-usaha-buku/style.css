@@ -1,0 +1,394 @@
+/* =====================
+   NAVIGATION (ARRU'YA)
+===================== */
+.arruya-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background-color: #0a1a2f; /* navy */
+}
+
+.arruya-nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d4af37; /* gold */
+  letter-spacing: 1px;
+}
+
+.arruya-nav .menu {
+  display: flex;
+  gap: 30px;
+}
+
+.arruya-nav .menu a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.arruya-nav .menu a:hover {
+  color: #d4af37;
+}
+
+/* garis bawah emas */
+.arruya-nav .menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #d4af37;
+  transition: width 0.3s;
+}
+
+.arruya-nav .menu a:hover::after {
+  width: 100%;
+}
+
+
+/* =====================
+   GLOBAL
+===================== */
+body {
+  font-family: "Segoe UI", Georgia, serif;
+  background-color: #f8fafc;
+  color: #1f2933;
+  line-height: 1.8;
+}
+
+p {
+  max-width: 900px;
+  margin: 15px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/* =====================
+   JUDUL
+===================== */
+h1 {
+  margin: 60px 20px 25px;
+  text-align: center;
+  font-size: 34px;
+  color: #0a1a2f;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #0a1a2f;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 25px;
+  color: #374151;
+}
+
+
+/* =====================
+   KONTEN UTAMA
+===================== */
+.kategori {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 45px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.kategori ul {
+  margin-top: 12px;
+  padding-left: 22px;
+}
+
+.kategori li {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.kategori li strong {
+  color: #0a1a2f;
+}
+
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  width: 100%;
+  background: linear-gradient(90deg, #06162b, #0a2342);
+  color: gold;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+
+
+/* =====================
+   PRODUK
+===================== */
+.daftar-produk {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.produk {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.produk img {
+  width: 150px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.produk h3 {
+  font-size: 16px;
+  color: #0a1a2f;
+}
+
+.harga {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0a1a2f;
+}
+
+.deskripsi {
+  font-size: 18px;
+  text-align: center;
+}
+
+.produk {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.produk:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(10, 26, 47, 0.15);
+}
+
+.produk img {
+  transition: transform 0.3s ease;
+}
+
+.produk:hover img {
+  transform: scale(1.03);
+}
+
+.produk:hover .harga {
+  color: #d4af37;
+}
+
+
+/* =====================
+   ARTIKEL
+===================== */
+/* =====================
+   BEDAH BUKU CMS
+===================== */
+
+/* Section wrapper */
+.daftar-produk {
+  padding: 60px 20px;
+}
+
+/* Artikel container */
+.artikel {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Card bedah buku */
+.buku-bedah {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(10, 26, 47, 0.08);
+  margin-bottom: 60px;
+}
+
+/* Judul buku */
+.buku-bedah h2 {
+  color: #0a1a2f;
+  margin-bottom: 8px;
+}
+
+/* Penulis */
+.buku-bedah .penulis {
+  font-style: italic;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+/* Gambar sampul */
+.buku-bedah .sampul {
+  width: 220px;
+  float: right;
+  margin: 0 0 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Paragraf */
+.buku-bedah p {
+  font-size: 17px;
+  line-height: 1.9;
+  text-align: justify;
+  margin-bottom: 18px;
+}
+
+/* Blockquote */
+.buku-bedah blockquote {
+  margin: 30px 0;
+  padding: 20px 25px;
+  background: #f8fafc;
+  border-left: 5px solid #d4af37;
+  font-style: italic;
+  color: #0a1a2f;
+}
+
+/* Arab quote */
+.buku-bedah blockquote p:first-child {
+  font-size: 20px;
+  text-align: right;
+  font-family: "Amiri", serif;
+}
+
+/* Tombol kembali */
+.buku-bedah .btn-kembali {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+/* Clear float */
+.buku-bedah::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .buku-bedah {
+    padding: 25px;
+  }
+
+  .buku-bedah .sampul {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+    width: 180px;
+  }
+}
+
+
+
+/* =====================
+   BUTTON
+===================== */
+.btn-kembali {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 16px;
+  background-color: #0a1a2f;
+  color: #d4af37;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn-kembali:hover {
+  background-color: #071425;
+}
+
+
+/* =====================
+   FORM
+===================== */
+.formulir {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 10
+}
+
+/* Section */
+.kategori {
+  padding: 50px 20px;
+}
+
+.kategori h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0a2342;
+}
+
+/* Wrapper CMS */
+.buku-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Card */
+.buku-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.buku-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Isi card */
+.buku-card h3 {
+  background: #f8fafc;
+  box-shadow: 0 8px 20px rgba(10, 26, 47, 0.08);
+}
+
+  
+.buku-card ul {
+  padding-left: 18px;
+  line-height: 1.6;
+}
+
